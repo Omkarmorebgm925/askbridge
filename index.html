@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="AskBridge Q&A preview; questions and answers stay in your own browser.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>AskBridge — Ask better. Learn together.</title>
+  <style>
+:root{--ink:#172034;--muted:#6d7789;--line:#e9ebf1;--blue:#4a58e8;--deep:#343dc5;--bg:#fafbfe;--soft:#f3f5ff;--serif:Georgia,'Times New Roman',serif;--shadow:0 12px 38px rgba(23,32,52,.065)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.55}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}a:hover{text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9aa5ff;outline-offset:3px}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.19}h2{letter-spacing:-.045em}.container{width:min(1200px,calc(100% - 52px));margin:0 auto}.skip-link{position:absolute;left:-9999px;z-index:99;background:white;padding:12px}.skip-link:focus{left:16px;top:16px}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #ecedf2;backdrop-filter:blur(16px)}.header-inner{height:78px;display:flex;align-items:center;gap:38px}.brand{font-weight:850;font-size:25px;letter-spacing:-1.4px;display:flex;align-items:center;gap:11px;white-space:nowrap}.brand-symbol{display:inline-flex;align-items:center;justify-content:center;background:#505cea;color:#fff;font-weight:850;border-radius:12px 12px 12px 3px;width:34px;height:34px;font-size:21px;letter-spacing:0}.brand-accent{font-weight:500}.brand-dot,.heading-period{color:var(--blue)}.top-nav{display:flex;gap:25px;margin-right:auto;color:#596375;font-size:14px;font-weight:650}.top-nav a:hover,.sidebar-link:hover{color:var(--blue)}.header-actions{display:flex;align-items:center;gap:22px}.visitor-pill{font-size:12px;color:#707a89;display:flex;align-items:center;gap:7px}.status-dot{width:7px;height:7px;background:#39bc84;border-radius:100%}.btn{border:0;border-radius:10px;font-weight:750;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform .15s,background .15s;min-height:43px;padding:0 20px}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--blue);color:white;box-shadow:0 6px 14px rgba(74,88,232,.15)}.btn-primary:hover{background:var(--deep)}.btn-dark{background:#20294c;color:#fff}.btn-dark:hover{background:#101830}.btn-light{background:white;color:#1f2762}.btn-text{background:transparent;color:var(--ink);padding-left:8px}.btn-large{padding:0 25px;min-height:51px}.demo-notice{background:#fff7de;color:#775714;border-bottom:1px solid #f2dfaa;font-size:13px}.demo-inner{display:flex;gap:9px;align-items:center;padding:10px 0}.demo-notice a{text-decoration:underline;font-weight:800}.error-notice{background:#ffeded;padding:12px 26px;text-align:center;color:#982a2a;font-weight:650}.hero{background:radial-gradient(circle at 70% 37%,#f0f1ff 0,#f8f9ff 32%,#fff 67%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;min-height:495px;align-items:center}.hero-copy{padding:65px 0 64px}.eyebrow,.section-eyebrow,.sidebar-title{font-weight:850;font-size:11px;letter-spacing:2.2px;color:#5a68cb}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:19px}.eyebrow-mark{width:8px;height:8px;transform:rotate(45deg);background:#6d70f4;border-radius:2px}.hero h1{font-size:clamp(48px,5vw,72px);letter-spacing:-.065em;font-weight:850;line-height:1.07;margin:0 0 23px}.hero h1 span{color:var(--blue)}.hero-copy>p{max-width:530px;font-size:17px;line-height:1.8;color:#707a8c;margin-bottom:26px}.hero-ctas{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.hero-foot{display:flex;gap:15px;align-items:center;margin-top:32px;color:#7d8494;font-size:12px}.avatar-stack{display:flex;margin-left:5px}.avatar-stack span{height:27px;width:27px;border-radius:50%;border:2px solid white;display:grid;place-items:center;margin-left:-6px;font-weight:750;color:#3c4a70;background:#d0e1ed}.avatar-stack span:nth-child(2){background:#f9d7c8}.avatar-stack span:nth-child(3){background:#e1ddfa}.avatar-stack span:nth-child(4){background:#bceadf}.hero-art{position:relative;height:425px;display:flex;justify-content:center;align-items:center}.illustration-bubble{height:260px;width:310px;border-radius:48% 52% 50% 50%;background:linear-gradient(135deg,#787efb,#505ce5);box-shadow:0 34px 66px rgba(74,88,232,.2);display:flex;align-items:center;justify-content:center;transform:rotate(-11deg)}.big-question{font-size:215px;font-weight:800;line-height:1;color:#fff;transform:rotate(11deg);text-shadow:0 6px 0 rgba(28,39,168,.1)}.float-card{position:absolute;z-index:2;display:flex;gap:12px;align-items:center;padding:13px 16px;background:#fff;box-shadow:0 15px 38px rgba(26,33,72,.1);border:1px solid #f5f4ff;border-radius:12px;font-size:12px;font-weight:700;white-space:nowrap}.float-one{top:48px;left:-20px;transform:rotate(-5deg)}.float-two{bottom:58px;right:-9px;transform:rotate(5deg)}.tiny-icon{height:31px;width:31px;display:grid;place-items:center;font-size:16px;font-weight:850;border-radius:9px}.lavender{color:#5e59da;background:#edeafe}.mint{color:#30a47c;background:#dbf8ec}.spark{position:absolute;color:#ffeaaa;font-size:34px}.spark-one{left:22px;top:16px}.spark-two{right:25px;bottom:25px}.floating-stars{color:#9d9eeb;position:absolute;right:0;top:49px;font-size:43px}.stats-section{border-top:1px solid #f0f0f6;border-bottom:1px solid var(--line);background:#fff}.stats-inner{display:flex;align-items:center;gap:60px;min-height:103px}.stats-inner>div:not(.stats-note){display:flex;flex-direction:column}.stats-inner strong{font-size:25px;letter-spacing:-1px}.stats-inner span:not(.sparkle){font-size:12px;color:#858d9b}.stats-note{margin-left:auto;display:flex;align-items:center;gap:12px;color:#737c8c;font-size:13px;max-width:220px}.sparkle{font-size:25px;color:#9b83e8}.content-grid{display:grid;grid-template-columns:187px minmax(0,1fr) 242px;gap:32px;padding-top:69px;padding-bottom:88px;align-items:start}.left-sidebar{position:sticky;top:100px}.sidebar-title{color:#9ca3b2;font-size:10px;letter-spacing:1.6px;margin:12px 0 18px}.category-list{display:flex;flex-direction:column;gap:3px}.category-btn{display:flex;align-items:center;gap:12px;border:0;border-radius:10px;color:#667181;background:transparent;text-align:left;width:100%;font-size:14px;font-weight:650;padding:11px 12px}.category-btn:hover{background:#f6f7ff;color:var(--blue)}.category-btn.active{background:#eff0ff;color:#3c49d8}.cat-icon{width:22px;text-align:center;font-size:17px}.cat-count{margin-left:auto;font-size:11px;color:#9aa1b0;font-weight:650}.sidebar-card{background:#f1f2ff;padding:23px 20px;border-radius:16px;margin-top:43px}.sidebar-card-icon{font-size:27px;color:#746de9}.sidebar-card h3{font-size:17px;letter-spacing:-.5px;margin:8px 0}.sidebar-card p{color:#81879a;font-size:13px;line-height:1.65}.sidebar-link{background:none;border:0;font-weight:800;font-size:13px;color:#5355d7;padding:0}.feed-heading{display:flex;justify-content:space-between;gap:15px;align-items:end;margin-bottom:22px}.section-eyebrow{font-size:10px;letter-spacing:1.5px}.feed-heading h2{font-size:34px;margin:8px 0 0}.sort-control{display:flex;gap:8px;align-items:center;white-space:nowrap;font-size:12px;color:#8a92a0}.sort-control select{color:#465164;font-size:12px;font-weight:700;border:0;background:transparent;max-width:132px;cursor:pointer}.search-wrap{display:flex;align-items:center;gap:12px;border:1px solid #e7e9f1;background:#fff;border-radius:12px;padding:0 17px;height:52px;margin-bottom:23px;box-shadow:0 4px 12px rgba(24,42,77,.018)}.search-wrap:focus-within{border-color:#b3bbff;box-shadow:0 0 0 4px #f0f2ff}.search-icon{font-size:31px;line-height:1;color:#8d96a8}.search-wrap input{border:0;outline:none;box-shadow:none;width:100%;height:45px;background:transparent;font-size:14px;color:var(--ink);min-width:0}.search-wrap input:focus{outline:none}.search-wrap input::placeholder{color:#a2aab7}.search-wrap kbd{color:#a6adbb;border:1px solid #ebedf2;padding:2px 8px;border-radius:5px;font-family:inherit;font-size:12px}.feed-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:17px;border-bottom:1px solid var(--line)}.filter-tabs{display:flex;gap:22px}.filter-tabs button{font-weight:750;border:0;background:none;border-bottom:2px solid transparent;padding:0 0 13px;font-size:13px;color:#98a0ad;white-space:nowrap}.filter-tabs button:hover,.filter-tabs button.active{color:#3d49d2;border-bottom-color:var(--blue)}.results-count{font-size:12px;color:#9fa6b1;white-space:nowrap}.questions-list{display:grid;gap:15px}.question-card{border:1px solid #e9ebf1;border-radius:15px;background:#fff;padding:23px 24px 18px;transition:box-shadow .2s,border-color .2s}.question-card:hover{box-shadow:var(--shadow);border-color:#d9ddf4}.q-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:13px}.topic-pill{display:inline-flex;padding:5px 10px;border-radius:5px;background:#eeefff;color:#5b5bc5;font-weight:750;font-size:10px;letter-spacing:.15px}.topic-pill.cat-engineering{background:#e9f3ff;color:#366fb2}.topic-pill.cat-science{background:#ebf8ed;color:#2e916b}.topic-pill.cat-careers{background:#fff2e8;color:#a36b32}.topic-pill.cat-general{background:#f3f3f6;color:#626a77}.q-time{color:#a1a7b3;font-size:12px}.question-click{padding:0;border:0;background:none;text-align:left;color:#1b253b;font-weight:800;font-size:19px;letter-spacing:-.55px;line-height:1.38;display:block;width:100%}.question-click:hover{color:#4350d8}.q-preview{font-size:13px;color:#788394;line-height:1.77;margin:11px 0 15px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tag-list{display:flex;gap:7px;flex-wrap:wrap}.tag{background:#f6f7fa;color:#8d95a4;padding:4px 9px;border-radius:5px;font-size:11px}.q-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #f0f1f5;margin-top:16px;padding-top:14px}.q-author{display:flex;gap:10px;align-items:center;color:#6e7888;font-size:12px}.author-avatar{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12px;color:#515ec9;background:#ecedfe}.answer-meta{display:flex;gap:6px;align-items:center;font-size:12px;color:#6f798a}.answer-meta b{color:#5d62d9}.answer-meta.no-answers b{color:#a5acb8}.empty-state{text-align:center;border:1px dashed #dce0ee;padding:50px 22px;border-radius:16px}.empty-icon{font-size:37px;color:#a5aae9}.empty-state h3{margin:9px 0;font-size:20px}.empty-state p{font-size:13px;color:#818a99}.tip-card{background:#f8f9ff;border:1px solid #f0f1fa;border-radius:16px;padding:25px 22px}.tip-top{display:flex;align-items:center;gap:9px;font-size:10px;font-weight:800;letter-spacing:1.3px;color:#8b8ebc}.tip-icon{font-size:26px;color:#646de8}.tip-card h3{font-size:20px;letter-spacing:-.65px;line-height:1.4;margin:20px 0 11px}.tip-card>p{color:#858da0;font-size:13px;line-height:1.77}.tip-divider{border-top:1px solid #e6e8f4;margin:20px 0 13px}.tip-item{display:flex;gap:12px;align-items:baseline}.tip-item span{color:#a1a7d9;font-size:11px;font-weight:800}.tip-item p{color:#637088;font-size:12px;margin:0 0 12px}.topics-card{padding:25px 5px}.topics-card h3{font-size:15px;letter-spacing:-.2px;margin:0 0 15px}.popular-topic{display:flex;width:100%;align-items:center;justify-content:space-between;background:none;border:0;padding:9px 0;color:#687386;font-size:13px}.popular-topic:hover{color:var(--blue)}.popular-topic span:last-child{color:#a3aab6}.how-section{background:#f9f9fe;padding:84px 0 92px}.how-section h2{font-size:39px;margin:11px 0 40px}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.how-grid article{background:#fff;border:1px solid #ebedf6;border-radius:16px;padding:30px 29px;position:relative}.step-no{position:absolute;right:30px;top:28px;color:#c2c6d2;font-size:12px;font-weight:750}.how-icon{height:54px;width:54px;background:#eeeefe;color:#525ddc;border-radius:16px;display:grid;place-items:center;font-size:28px;font-weight:800;margin-bottom:28px}.how-grid h3{font-size:19px;letter-spacing:-.4px;margin-bottom:10px}.how-grid p{font-size:13px;line-height:1.8;color:#8390a1;max-width:290px;margin:0}.bottom-cta{background:linear-gradient(120deg,#404ccc,#555fe9);color:white;padding:62px 0}.bottom-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.bottom-cta .section-eyebrow{color:#c8cbff}.bottom-cta h2{font-size:35px;margin:10px 0}.bottom-cta p{font-size:14px;color:#d5d9ff;margin:0}.site-footer{background:white;padding:34px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{font-size:22px;letter-spacing:-1px;font-weight:800}.footer-brand span{color:var(--blue)}.site-footer p{margin:2px 0;color:#939baa;font-size:12px}.footer-right{display:flex;gap:26px;color:#9ca4b0;font-size:12px}.back-link{border:0;background:transparent;padding:0;margin:0 0 22px;color:#6165d7;font-weight:750}.detail-card{border:1px solid #e7e9f1;border-radius:16px;background:#fff;padding:30px}.detail-card h2{font-size:29px;line-height:1.32;margin:15px 0}.detail-body{font-size:14px;line-height:1.9;color:#5f6b7b;overflow-wrap:anywhere;white-space:normal}.detail-author{font-size:12px;color:#8c95a4;display:flex;gap:9px;align-items:center;margin-top:23px;border-top:1px solid var(--line);padding-top:20px}.detail-actions{display:flex;justify-content:flex-end;margin-top:15px}.share-btn{border:1px solid #e6e8f1;background:#fff;border-radius:8px;padding:9px 12px;color:#6b73a0;font-weight:700;font-size:12px}.answers-heading{display:flex;align-items:center;justify-content:space-between;margin:31px 0 15px}.answers-heading h2{font-size:24px;margin:0}.answer-card{border:1px solid #e9ebf1;border-radius:14px;padding:22px 24px;margin-bottom:13px;background:#fff}.answer-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px}.answer-card-head strong{font-size:13px}.answer-card-head span{font-size:12px;color:#9ea5b0}.answer-card p{font-size:14px;color:#586476;line-height:1.8;margin:0;overflow-wrap:anywhere}.reply-card{background:#f9faff;border:1px solid #e9ebf9;border-radius:15px;padding:26px;margin-top:22px}.reply-card h3{font-size:20px;margin:0 0 6px}.reply-card>p{font-size:13px;color:#7d8798;margin:0 0 21px}.reply-card label,.modal label{display:block;font-size:12px;font-weight:800;margin:13px 0 7px}.reply-card input,.reply-card textarea,.modal input,.modal textarea,.modal select{width:100%;border-radius:9px;border:1px solid #e2e5ee;background:#fff;padding:12px 13px;color:var(--ink);resize:vertical;outline:0;font-size:14px}.reply-card input:focus,.reply-card textarea:focus,.modal input:focus,.modal textarea:focus,.modal select:focus{border-color:#808cf8;box-shadow:0 0 0 3px #e8eaff}.form-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:20px}.form-bottom>span{font-size:11px;line-height:1.5;color:#969eab}.modal[hidden],.toast[hidden],[hidden]{display:none!important}.modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px}.modal-backdrop{position:absolute;inset:0;background:rgba(12,20,46,.58)}.modal-dialog{position:relative;background:#fff;border-radius:18px;padding:32px;width:min(640px,100%);max-height:calc(100vh - 35px);overflow:auto;box-shadow:0 32px 100px rgba(0,0,0,.18)}.modal-header{display:flex;justify-content:space-between;align-items:start;gap:10px}.modal h2{font-size:29px;margin:7px 0 14px}.close-btn{height:32px;width:32px;border:0;border-radius:8px;background:#f3f4f8;font-size:24px;color:#657085}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.optional{font-weight:500;color:#959ca9}.toast{position:fixed;right:22px;bottom:22px;background:#1f2b47;color:#fff;padding:14px 18px;border-radius:10px;box-shadow:0 8px 30px #1b24452b;z-index:90;font-size:13px;max-width:350px}@media(max-width:1040px){.content-grid{grid-template-columns:170px minmax(0,1fr);gap:23px}.right-sidebar{display:none}.hero-grid{grid-template-columns:1fr .7fr}.float-one{left:-33px}.float-two{right:-10px}.stats-inner{gap:38px}}@media(max-width:760px){.container{width:min(100% - 34px,650px)}.header-inner{height:68px;gap:12px}.brand{font-size:22px}.brand-symbol{width:30px;height:30px}.top-nav{display:none}.header-actions{margin-left:auto;gap:8px}.visitor-pill{display:none}.header-actions .btn{padding:0 12px;font-size:12px;min-height:39px}.hero-grid{display:block;min-height:auto}.hero-copy{padding:53px 0 43px}.hero h1{font-size:clamp(44px,10vw,68px)}.hero-copy>p{font-size:15px}.hero-art{display:none}.stats-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;min-height:100px}.stats-note{display:none}.stats-inner strong{font-size:23px}.stats-inner span:not(.sparkle){font-size:10px}.content-grid{display:block;padding:48px 0 70px}.left-sidebar{position:static}.sidebar-title,.sidebar-card{display:none}.category-list{flex-direction:row;gap:8px;overflow-x:auto;padding-bottom:14px;margin-bottom:22px;scrollbar-width:none}.category-list::-webkit-scrollbar{display:none}.category-btn{width:auto;padding:8px 11px;white-space:nowrap;background:#f8f9fe;border:1px solid #f0f0f7;font-size:12px}.category-btn.active{border-color:#d7d9ff}.cat-count{display:none}.cat-icon{font-size:15px;width:auto}.feed-heading h2{font-size:30px}.feed-heading{align-items:end}.sort-control label{display:none}.filter-tabs{gap:17px}.filter-tabs button{font-size:12px}.questions-list{gap:12px}.question-card{padding:18px 17px 16px}.question-click{font-size:17px}.question-card .q-preview{font-size:12px}.how-section{padding:65px 0}.how-section h2{font-size:31px}.how-grid{grid-template-columns:1fr;gap:12px}.how-grid article{padding:22px}.how-icon{margin-bottom:17px}.bottom-cta-inner{align-items:start;flex-direction:column}.bottom-cta h2{font-size:29px}.footer-inner{align-items:start;flex-direction:column}.modal-dialog{padding:24px 18px}.form-grid{grid-template-columns:1fr;gap:0}.form-bottom{align-items:start;flex-direction:column}.form-bottom .btn{align-self:flex-end}.detail-card{padding:22px 18px}.detail-card h2{font-size:25px}}@media(max-width:410px){.header-actions .btn{font-size:0;gap:0}.header-actions .btn span{font-size:20px}.search-wrap kbd{display:none}.feed-heading{flex-direction:column;align-items:start}.sort-control{align-self:flex-end}.hero-ctas{align-items:start;flex-direction:column}.filter-tabs{gap:10px}.filter-tabs button{font-size:11px}}
+
+.legal-section{padding:32px 0;background:#fafaff;border-top:1px solid #e8e8ef}.legal-inner{max-width:900px;margin:0 auto;padding:0 22px}.legal-inner details{background:#fff;border:1px solid #dfe0e8;border-radius:12px;padding:18px 22px;margin:12px 0}.legal-inner summary{cursor:pointer;font-weight:750}.legal-inner details h1{font-size:28px;line-height:1.3;margin:20px 0 12px}.legal-inner details h2{font-size:20px;line-height:1.4;margin:24px 0 8px}.legal-inner details p,.legal-inner details li{line-height:1.6;margin-bottom:10px}.legal-inner details a{color:#304dc0;text-decoration:underline}
+</style>
+
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="AskBridge home"><span class="brand-symbol">?</span><span>ask<span class="brand-accent">bridge</span><span class="brand-dot">.</span></span></a>
+      <nav class="top-nav" aria-label="Main navigation"><a href="#" id="navExplore">Explore</a><a href="#how-it-works" id="navHow">How it works</a></nav>
+      <div class="header-actions"><span class="visitor-pill"><span class="status-dot"></span><span id="connectionText">Preview · Browser only</span></span><button class="btn btn-primary" id="headerAskBtn" type="button"><span aria-hidden="true">＋</span> Ask a question</button></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="demoNotice" class="demo-notice" hidden><div class="container demo-inner"><span aria-hidden="true">ⓘ</span> <span><strong>Preview mode:</strong> questions and answers are saved only in this browser. <a href="#community-rules">See community rules</a>. The example questions are illustrative, not real conversations.</span></div></div>
+    <div id="errorNotice" class="error-notice" hidden role="alert"></div>
+    <section class="hero"><div class="container hero-grid">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-mark"></span> THE PLACE FOR CURIOUS MINDS</div><h1>Good questions.<br><span>Better together.</span></h1><p>Ask what’s on your mind, learn from real people, and share the knowledge that helps someone else move forward.</p><div class="hero-ctas"><button type="button" class="btn btn-dark btn-large" id="heroAskBtn">Ask your first question <span aria-hidden="true">↗</span></button><button type="button" class="btn btn-text" id="heroBrowseBtn">Browse conversations <span aria-hidden="true">→</span></button></div><div class="hero-foot"><div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span><span>K</span></div><span>One question can help a whole community.</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="float-card float-one"><div class="tiny-icon lavender">?</div><span>How do I get started?</span></div><div class="illustration-bubble"><div class="big-question">?</div><div class="spark spark-one">✦</div><div class="spark spark-two">✳</div></div><div class="float-card float-two"><div class="tiny-icon mint">✓</div><span>Here’s what worked for me...</span></div><div class="floating-stars">✳ &nbsp;✧</div></div>
+    </div></section>
+    <section class="stats-section"><div class="container stats-inner"><div><strong id="statQuestions">0</strong><span>Questions asked</span></div><div><strong id="statAnswers">0</strong><span>Answers shared</span></div><div><strong id="statSolved">0</strong><span>Discussions answered</span></div><div class="stats-note"><span class="sparkle">✳</span> The best answers come from helping each other.</div></div></section>
+    <div class="container content-grid" id="explore">
+      <aside class="left-sidebar" aria-label="Browse topics"><div class="sidebar-title">DISCOVER</div><div class="category-list" id="categoryList"></div><div class="sidebar-card"><div class="sidebar-card-icon">✦</div><h3>Know something useful?</h3><p>Your experience could be exactly what someone needs.</p><button type="button" id="sidebarAskBtn" class="sidebar-link">Share a question <span aria-hidden="true">↗</span></button></div></aside>
+      <section class="feed-area" aria-label="Questions"><div id="listView"><div class="feed-heading"><div><div class="section-eyebrow">THE CONVERSATION STARTS HERE</div><h2>Explore questions<span class="heading-period">.</span></h2></div><div class="sort-control"><label for="sortSelect">Sort by</label><select id="sortSelect"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="most">Most answered</option></select></div></div><div class="search-wrap"><span aria-hidden="true" class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Search questions, topics, or keywords…" aria-label="Search questions" autocomplete="off"><kbd>/</kbd></div><div class="feed-toolbar"><div class="filter-tabs" role="group" aria-label="Filter questions"><button data-filter="all" class="active" type="button">All questions</button><button data-filter="unanswered" type="button">Unanswered</button><button data-filter="answered" type="button">Answered</button></div><span class="results-count" id="resultsCount"></span></div><div class="questions-list" id="questionsList" aria-live="polite"></div></div>
+        <div id="detailView" hidden><button type="button" class="back-link" id="backBtn">← Back to questions</button><div id="questionDetail"></div><div class="answers-heading"><h2 id="answersHeading">Answers</h2><span class="results-count" id="detailAnswerCount"></span></div><div id="answersList"></div><div class="reply-card"><h3>Share your answer</h3><p>Be specific, helpful and respectful. Your experience matters.</p><form id="answerForm"><label for="replyName">Your display name</label><input type="text" id="replyName" required minlength="2" maxlength="40" placeholder="e.g. Alex"><label for="replyBody">Your answer</label><textarea id="replyBody" required minlength="15" maxlength="5000" rows="6" placeholder="Write a clear and helpful answer…"></textarea><div class="form-bottom"><span>Minimum 15 characters.</span><button type="submit" class="btn btn-primary">Post answer <span aria-hidden="true">↗</span></button></div></form></div></div>
+      </section>
+      <aside class="right-sidebar"><div class="tip-card"><div class="tip-top"><span class="tip-icon">✳</span><span>COMMUNITY NOTES</span></div><h3>Everyone starts with a question.</h3><p>Great questions lead to great conversations. Don’t be afraid to ask.</p><div class="tip-divider"></div><div class="tip-item"><span>01</span><p>Use a clear, specific title</p></div><div class="tip-item"><span>02</span><p>Give enough context</p></div><div class="tip-item"><span>03</span><p>Thank people who help</p></div></div><div class="topics-card"><h3>Popular topics</h3><div id="popularTopics"></div></div></aside>
+    </div>
+    <section class="how-section" id="how-it-works"><div class="container"><div class="section-eyebrow">SIMPLE BY DESIGN</div><h2>Knowledge grows when<br>we share it<span class="heading-period">.</span></h2><div class="how-grid"><article><span class="step-no">01</span><div class="how-icon">?</div><h3>Ask a question</h3><p>Share what you’re stuck on. Add context and choose the right topic.</p></article><article><span class="step-no">02</span><div class="how-icon">↗</div><h3>Get answers</h3><p>People in the community can reply with ideas, experience and solutions.</p></article><article><span class="step-no">03</span><div class="how-icon">✦</div><h3>Learn together</h3><p>Answers stay available so the next curious person can learn too.</p></article></div></div></section>
+    <section class="bottom-cta"><div class="container bottom-cta-inner"><div><div class="section-eyebrow">THE FLOOR IS YOURS</div><h2>What would you like to know?</h2><p>No question is too small to start a conversation.</p></div><button class="btn btn-light btn-large" id="footerAskBtn" type="button">Ask a question <span aria-hidden="true">↗</span></button></div></section>
+  <section class="legal-section" aria-label="Site notices"><div class="legal-inner"><h2>Community information</h2><p>Preview only — questions are saved to your own browser and are not visible to other users.</p><details id="privacy"><summary>Privacy notice</summary><h1>Privacy notice — preview</h1><p><strong>Last updated: 15 November 2026</strong></p><p>This is a demonstration of an online question-and-answer website, not yet a live multi-user community. The site is served as static files from GitHub Pages.</p><h2>What is stored</h2><p>When you enter a display name, question or answer in preview mode, it is stored in your own browser using localStorage. This demonstration does not transmit your posts to a shared AskBridge database. Other visitors cannot see those posts. Deleting this site's browser storage removes them from that browser.</p><h2>Hosting and external services</h2><p>GitHub Pages delivers site files and may process request information such as IP addresses and request logs under GitHub’s policies. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Read GitHub’s privacy statement.</a></p><h2>Do not submit sensitive details</h2><p>Do not enter patient information, identification numbers, passwords, confidential business information or other sensitive personal information. This preview is not designed for that data.</p><h2>When this changes</h2><p>Before enabling public accounts or shared posts, we will revise this notice to specify the actual operator, legal contact details, purposes, service providers, retention periods, and rights or grievance channels as applicable.</p><h2>Questions or concerns</h2><p>For a technical or content concern you can <a href="https://github.com/Omkarmorebgm925/askbridge/issues/new">open an issue</a> in the public repository. Do not include confidential information in a public issue.</p><p><a href="#community-rules">Community rules</a></p></details><details id="community-rules"><summary>Community rules and preview terms</summary><h1>Community rules and preview terms</h1><p><strong>Last updated: 15 November 2026</strong></p><p>AskBridge is currently a demonstration. Questions and replies are saved on your device only, not published to other visitors. The provided sample conversations are fictional.</p><h2>Acceptable participation</h2><ul><li>Write respectful, relevant and original questions and answers.</li><li>Do not post threats, harassment, hate, defamatory accusations, scams, illegal material or content that violates others' privacy.</li><li>Do not copy and publish copyrighted content unless you have permission or another lawful basis.</li><li>Do not share personal, patient-identifiable or confidential business data.</li><li>Do not impersonate people or misrepresent credentials.</li></ul><h2>No professional advice</h2><p>Community answers may be incorrect. The preview is not medical, legal, financial, engineering certification, or other professional advice; verify high-stakes answers with qualified professionals.</p><h2>Reports and future moderation</h2><p>To report a technical issue or a concern about this demonstration, <a href="https://github.com/Omkarmorebgm925/askbridge/issues/new">open a GitHub issue</a> without disclosing private information. A public multi-user edition will require a dedicated confidential report channel, moderation process, operator contact details, and an appropriately revised policy before launch.</p><h2>Brand and availability</h2><p>AskBridge is a working project name, not a representation that trademarks have been cleared. The preview is provided as-is and may change or be withdrawn. Third-party hosting and database terms apply to those services.</p><p><a href="#privacy">Privacy notice</a></p></details></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><span class="footer-brand">askbridge<span>.</span></span><p>A little more knowledge, together.</p></div><div class="footer-right"><span><a href="#privacy">Privacy</a> · <a href="#community-rules">Community rules</a> · <a href="https://github.com/Omkarmorebgm925/askbridge/issues/new">Report a problem</a></span><span>© <span id="year"></span> AskBridge · Preview; not professional advice</span></div></div></footer>
+
+  <div class="modal" id="askModal" hidden><div class="modal-backdrop" data-close-modal="true"></div><section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-header"><div><div class="section-eyebrow">LET'S START SOMETHING</div><h2 id="modalTitle">Ask the community</h2></div><button type="button" class="close-btn" id="closeModalBtn" aria-label="Close form">×</button></div><form id="questionForm"><div class="form-grid"><div><label for="questionName">Your display name</label><input id="questionName" type="text" minlength="2" maxlength="40" placeholder="e.g. Sam" required></div><div><label for="questionCategory">Topic</label><select id="questionCategory" required><option value="">Choose a topic</option><option>General</option><option>Technology</option><option>Engineering</option><option>Science</option><option>Careers</option></select></div></div><label for="questionTitle">Your question</label><input type="text" id="questionTitle" required minlength="10" maxlength="160" placeholder="What would you like help with?"><label for="questionBody">Add some context</label><textarea id="questionBody" rows="6" minlength="20" maxlength="5000" required placeholder="Explain the situation, what you've tried, and what kind of answer would help…"></textarea><label for="questionTags">Tags <span class="optional">(optional)</span></label><input id="questionTags" type="text" maxlength="120" placeholder="e.g. design, learning, beginner"><div class="form-bottom"><span>Be kind. Avoid sharing private or sensitive information.</span><button class="btn btn-primary" type="submit" id="postQuestionBtn">Post question <span aria-hidden="true">↗</span></button></div></form></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>
+window.ASKBRIDGE_CONFIG = { supabaseUrl: "", supabaseAnonKey: "" };
+</script>
+<script>
+/* AskBridge: static community Q&A frontend. Demo data stays in the browser;
+   a configured Supabase project makes posts shared across all visitors. */
+'use strict';
+
+const $ = (id) => document.getElementById(id);
+const CATEGORIES = [
+  { name: 'All topics', icon: '▦', key: 'All' },
+  { name: 'Technology', icon: '⌘', key: 'Technology' },
+  { name: 'Engineering', icon: '⚙', key: 'Engineering' },
+  { name: 'Science', icon: '✳', key: 'Science' },
+  { name: 'Careers', icon: '◈', key: 'Careers' },
+  { name: 'General', icon: '◇', key: 'General' }
+];
+const config = window.ASKBRIDGE_CONFIG || {};
+const liveMode = Boolean(config.supabaseUrl && config.supabaseAnonKey);
+let db = null;
+let posts = [];
+let answers = [];
+let category = 'All';
+let filter = 'all';
+let search = '';
+let sort = 'newest';
+let selectedQuestion = null;
+let busy = false;
+let toastTimer = null;
+let lastFocus = null;
+
+const escapeHtml = (s = '') => String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[ch]));
+const textWithBreaks = (s = '') => escapeHtml(s).replace(/\n/g, '<br>');
+const storeGet = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
+const storeSet = (key, value) => { try { localStorage.setItem(key, value); } catch { /* file:// private mode */ } };
+const age = (d) => {
+  const delta = Math.max(0, Date.now() - new Date(d).getTime());
+  if (!Number.isFinite(delta)) return 'Recently';
+  if (delta < 60_000) return 'Just now';
+  if (delta < 3_600_000) return `${Math.floor(delta / 60_000)}m ago`;
+  if (delta < 86_400_000) return `${Math.floor(delta / 3_600_000)}h ago`;
+  if (delta < 604_800_000) return `${Math.floor(delta / 86_400_000)}d ago`;
+  return new Date(d).toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'});
+};
+const countAnswers = (id) => answers.filter(a => a.question_id === id).length;
+const categoryClass = (name) => `cat-${String(name).toLowerCase().replace(/[^a-z0-9]/g,'')}`;
+const avatar = (name) => escapeHtml((String(name || 'G').trim()[0] || 'G').toUpperCase());
+
+function sampleData() {
+  const daysAgo = n => new Date(Date.now() - n * 86_400_000).toISOString();
+  return {
+    posts: [
+      {id:'demo-1',title:'How can I prepare for a technical interview without memorising every answer?',body:'I understand my work but sometimes struggle to explain it clearly during interviews. What preparation methods have helped you communicate technical experience naturally?',category:'Careers',tags:['interviews','communication'],author_name:'Jordan',created_at:daysAgo(0.4)},
+      {id:'demo-2',title:'How do you check whether a measurement method is reliable?',body:'I am learning about repeatability and reproducibility in practical testing. What should I look at first when evaluating a measurement method?',category:'Engineering',tags:['testing','measurement'],author_name:'Maya',created_at:daysAgo(1.5)},
+      {id:'demo-3',title:'What is the easiest way to launch a useful website for free?',body:'I want to build a small community website, without purchasing a server or a domain. Are free hosting and database tools good enough for a first version?',category:'Technology',tags:['websites','beginner'],author_name:'Alex',created_at:daysAgo(2.1)},
+      {id:'demo-4',title:'What are your favourite ways to explain difficult science simply?',body:'Some concepts are easy to understand but hard to teach. Do visual analogies, experiments, or real-world examples work best for you?',category:'Science',tags:['learning','teaching'],author_name:'Riya',created_at:daysAgo(3.2)},
+      {id:'demo-5',title:'What information makes a question easy for other people to answer?',body:'Sometimes I get useful answers quickly and other times people ask me to clarify. What makes a well-written community question?',category:'General',tags:['community','advice'],author_name:'Chris',created_at:daysAgo(5.1)}
+    ],
+    answers: [
+      {id:'a1',question_id:'demo-1',author_name:'Taylor',body:'Use three short stories from your own projects: the challenge, what you did, and the result. Then practise explaining each story in under two minutes.',created_at:daysAgo(.2)},
+      {id:'a2',question_id:'demo-1',author_name:'Sam',body:'Try a mock interview with someone unfamiliar with your field. If they understand the main point, your answer is probably clear enough.',created_at:daysAgo(.1)},
+      {id:'a3',question_id:'demo-2',author_name:'Dee',body:'Start by confirming the measurement definition, reference standard, calibration and fixture setup. Then assess the variation contributed by the measurement system relative to your intended use.',created_at:daysAgo(1.2)},
+      {id:'a4',question_id:'demo-3',author_name:'Nina',body:'A static site on GitHub Pages with a hosted free-tier database is a good beginning. Test locally first, then connect the database to let everyone see the same posts.',created_at:daysAgo(1.8)},
+      {id:'a5',question_id:'demo-5',author_name:'Lee',body:'A specific title, useful background, clear constraints, and what you have already tried can make a big difference.',created_at:daysAgo(4.8)}
+    ]
+  };
+}
+
+function saveDemo() {
+  if (!liveMode) storeSet('askbridge-data-v1', JSON.stringify({ posts, answers }));
+}
+function startDemo() {
+  let stored = null;
+  try { stored = JSON.parse(storeGet('askbridge-data-v1') || 'null'); } catch {}
+  const data = stored && Array.isArray(stored.posts) && Array.isArray(stored.answers) ? stored : sampleData();
+  posts = data.posts;
+  answers = data.answers;
+  saveDemo();
+  $('demoNotice').hidden = false;
+}
+function toast(message, isError=false) {
+  const node = $('toast'); node.textContent = message;
+  node.style.background = isError ? '#9f2839' : '#1f2b47'; node.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { node.hidden = true; }, 4000);
+}
+function showError(message) { $('errorNotice').textContent = message; $('errorNotice').hidden = false; }
+function clearError() { $('errorNotice').hidden = true; }
+
+async function init() {
+  $('year').textContent = new Date().getFullYear();
+  const name = storeGet('askbridge-name') || '';
+  $('questionName').value = name; $('replyName').value = name;
+  attachEvents();
+  if (liveMode) {
+    $('connectionText').textContent = 'Live community';
+    try {
+      if (!window.supabase?.createClient) throw new Error('Database library did not load. Check your internet connection.');
+      db = window.supabase.createClient(config.supabaseUrl.trim(), config.supabaseAnonKey.trim());
+      await refreshData();
+    } catch (err) {
+      showError(`Unable to connect to the shared database: ${err.message}. Check config.js and the SQL setup.`);
+      posts=[]; answers=[];
+    }
+  } else { startDemo(); }
+  render(); handleHash();
+}
+
+async function refreshData() {
+  if (!db) return;
+  const [q, a] = await Promise.all([
+    db.from('questions').select('id,title,body,category,tags,author_name,created_at').order('created_at',{ascending:false}).limit(300),
+    db.from('answers').select('id,question_id,body,author_name,created_at').order('created_at',{ascending:true}).limit(1500)
+  ]);
+  if (q.error) throw q.error;
+  if (a.error) throw a.error;
+  posts = q.data || [];
+  answers = a.data || [];
+}
+
+async function ensureVisitor() {
+  if (!db) throw new Error('The database is not connected.');
+  const { data: existing, error: getError } = await db.auth.getUser();
+  if (!getError && existing?.user) return existing.user;
+  const { data, error } = await db.auth.signInAnonymously();
+  if (error) throw new Error(`${error.message}. Enable Anonymous sign-ins in Supabase Authentication settings.`);
+  return data.user;
+}
+
+function categoryButtons() {
+  $('categoryList').innerHTML = CATEGORIES.map(c => {
+    const n = c.key==='All' ? posts.length : posts.filter(p=>p.category===c.key).length;
+    return `<button class="category-btn ${category===c.key?'active':''}" type="button" data-category="${escapeHtml(c.key)}" aria-pressed="${category===c.key}"><span class="cat-icon" aria-hidden="true">${c.icon}</span>${escapeHtml(c.name)}<span class="cat-count">${n}</span></button>`;
+  }).join('');
+  const popular = CATEGORIES.filter(c=>c.key!=='All').map(c => ({...c,n:posts.filter(p=>p.category===c.key).length})).sort((a,b)=>b.n-a.n).slice(0,4);
+  $('popularTopics').innerHTML = popular.map(c=>`<button class="popular-topic" data-category="${escapeHtml(c.key)}" type="button"><span>${c.icon} &nbsp; ${escapeHtml(c.name)}</span><span>${c.n}</span></button>`).join('');
+}
+function questionCard(q) {
+  const n = countAnswers(q.id);
+  return `<article class="question-card"><div class="q-top"><span class="topic-pill ${categoryClass(q.category)}">${escapeHtml(q.category)}</span><time class="q-time" datetime="${escapeHtml(q.created_at)}">${age(q.created_at)}</time></div><button class="question-click" type="button" data-open="${escapeHtml(q.id)}">${escapeHtml(q.title)}</button><p class="q-preview">${escapeHtml(q.body)}</p><div class="tag-list">${(q.tags||[]).map(t=>`<span class="tag">#${escapeHtml(t)}</span>`).join('')}</div><div class="q-bottom"><span class="q-author"><span class="author-avatar">${avatar(q.author_name)}</span> ${escapeHtml(q.author_name)}</span><span class="answer-meta ${n?'':'no-answers'}"><span aria-hidden="true">▤</span><b>${n}</b> ${n===1?'answer':'answers'}</span></div></article>`;
+}
+function currentPosts() {
+  const q = search.trim().toLowerCase();
+  return posts.filter(p=>(category==='All'||p.category===category)
+    &&(filter==='all'||(filter==='answered'?countAnswers(p.id)>0:countAnswers(p.id)===0))
+    &&(!q||[p.title,p.body,p.category,...(p.tags||[])].join(' ').toLowerCase().includes(q)))
+    .sort((a,b)=>sort==='most'?countAnswers(b.id)-countAnswers(a.id):sort==='oldest'?new Date(a.created_at)-new Date(b.created_at):new Date(b.created_at)-new Date(a.created_at));
+}
+function renderList() {
+  const visible = currentPosts();
+  $('resultsCount').textContent = `${visible.length} ${visible.length===1?'result':'results'}`;
+  $('questionsList').innerHTML = visible.length ? visible.map(questionCard).join('') : `<div class="empty-state"><div class="empty-icon">⌕</div><h3>No questions found</h3><p>Try a different search or start the conversation yourself.</p><button class="btn btn-primary" type="button" id="emptyAskBtn">Ask a question ↗</button></div>`;
+  document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x.dataset.filter===filter);x.setAttribute('aria-pressed',String(x.dataset.filter===filter));});
+}
+function render() {
+  $('statQuestions').textContent = posts.length;
+  $('statAnswers').textContent = answers.length;
+  $('statSolved').textContent = posts.filter(p=>countAnswers(p.id)>0).length;
+  categoryButtons(); renderList();
+  if(selectedQuestion) renderDetail();
+}
+function renderDetail() {
+  const q = posts.find(x=>x.id===selectedQuestion);
+  if (!q) { selectedQuestion=null; $('detailView').hidden=true;$('listView').hidden=false;return; }
+  const related = answers.filter(a=>a.question_id===q.id);
+  $('listView').hidden = true; $('detailView').hidden = false;
+  $('questionDetail').innerHTML = `<article class="detail-card"><span class="topic-pill ${categoryClass(q.category)}">${escapeHtml(q.category)}</span><h2>${escapeHtml(q.title)}</h2><p class="detail-body">${textWithBreaks(q.body)}</p><div class="tag-list">${(q.tags||[]).map(t=>`<span class="tag">#${escapeHtml(t)}</span>`).join('')}</div><div class="detail-author"><span class="author-avatar">${avatar(q.author_name)}</span><span>Asked by <strong>${escapeHtml(q.author_name)}</strong> · ${age(q.created_at)}</span></div><div class="detail-actions"><button type="button" class="share-btn" id="shareBtn">↗ Copy question link</button></div></article>`;
+  $('answersHeading').textContent = `${related.length} ${related.length===1?'Answer':'Answers'}`;
+  $('detailAnswerCount').textContent = related.length?'Community responses':'Be the first to answer';
+  $('answersList').innerHTML = related.length ? related.map(a=>`<article class="answer-card"><div class="answer-card-head"><span class="q-author"><span class="author-avatar">${avatar(a.author_name)}</span> <strong>${escapeHtml(a.author_name)}</strong></span><span>${age(a.created_at)}</span></div><p>${textWithBreaks(a.body)}</p></article>`).join('') : `<div class="empty-state"><div class="empty-icon">✳</div><h3>No answers yet</h3><p>Your response could make all the difference.</p></div>`;
+}
+function handleHash() {
+  const match = decodeURIComponent(location.hash).match(/^#question\/([\w-]+)$/);
+  selectedQuestion = match ? match[1] : null;
+  $('detailView').hidden = !selectedQuestion;
+  $('listView').hidden = Boolean(selectedQuestion);
+  if (selectedQuestion) renderDetail();
+  else if (location.hash === '#how-it-works') return;
+  if (selectedQuestion) window.scrollTo({top:0,behavior:'smooth'});
+}
+function openAsk() {
+  lastFocus = document.activeElement;
+  $('askModal').hidden = false;
+  document.body.style.overflow = 'hidden';
+  $('questionTitle').focus();
+}
+function closeAsk() {
+  $('askModal').hidden = true;
+  document.body.style.overflow = '';
+  if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+}
+async function submitQuestion(e) {
+  e.preventDefault();if(busy)return;
+  const author_name=$('questionName').value.trim(),title=$('questionTitle').value.trim(),body=$('questionBody').value.trim(),cat=$('questionCategory').value;
+  const tags=[...new Set($('questionTags').value.split(',').map(x=>x.trim().replace(/^#/,'')).filter(Boolean))].slice(0,5).map(x=>x.slice(0,24));
+  if(author_name.length<2||title.length<10||body.length<20||!CATEGORIES.some(x=>x.key===cat&&x.key!=='All')){toast('Please complete all required fields.',true);return;}
+  busy=true;$('postQuestionBtn').disabled=true;
+  try {
+    if (liveMode) {
+      const user = await ensureVisitor();
+      const {error}=await db.from('questions').insert({author_id:user.id,author_name,title,body,category:cat,tags});
+      if(error)throw error;
+      await refreshData();
+    } else {
+      posts.unshift({id:`local-${Date.now()}-${Math.random().toString(36).slice(2,8)}`,author_name,title,body,category:cat,tags,created_at:new Date().toISOString()});
+      saveDemo();
+    }
+    storeSet('askbridge-name',author_name);$('replyName').value=author_name;
+    $('questionForm').reset();$('questionName').value=author_name;
+    closeAsk(); category='All';filter='all';search='';$('searchInput').value='';render();
+    location.hash='';document.getElementById('explore').scrollIntoView({behavior:'smooth'});
+    toast('Your question has been posted!');
+  } catch(err){toast(`Could not post: ${err.message}`,true);}finally{busy=false;$('postQuestionBtn').disabled=false;}
+}
+async function submitAnswer(e) {
+  e.preventDefault();if(busy||!selectedQuestion)return;
+  const author_name=$('replyName').value.trim(),body=$('replyBody').value.trim();
+  if(author_name.length<2||body.length<15){toast('Please enter your name and a helpful answer.',true);return;}
+  const target=selectedQuestion;
+  busy=true;const btn=$('answerForm').querySelector('button[type="submit"]');btn.disabled=true;
+  try {
+    if(liveMode){const user=await ensureVisitor();const {error}=await db.from('answers').insert({question_id:target,author_id:user.id,author_name,body});if(error)throw error;await refreshData();}
+    else{answers.push({id:`local-${Date.now()}-${Math.random().toString(36).slice(2,8)}`,question_id:target,author_name,body,created_at:new Date().toISOString()});saveDemo();}
+    storeSet('askbridge-name',author_name);$('questionName').value=author_name;$('replyBody').value='';render();toast('Thanks! Your answer is now visible.');
+  }catch(err){toast(`Could not post: ${err.message}`,true);}finally{busy=false;btn.disabled=false;}
+}
+function goToCategory(next) {category=next;selectedQuestion=null;filter='all';location.hash='';render();$('explore').scrollIntoView({behavior:'smooth'});}
+function attachEvents() {
+  ['headerAskBtn','heroAskBtn','sidebarAskBtn','footerAskBtn'].forEach(id=>$(id).addEventListener('click',openAsk));
+  $('closeModalBtn').addEventListener('click',closeAsk);
+  $('askModal').addEventListener('click',e=>{if(e.target.dataset.closeModal)closeAsk();});
+  $('questionForm').addEventListener('submit',submitQuestion);
+  $('answerForm').addEventListener('submit',submitAnswer);
+  $('heroBrowseBtn').addEventListener('click',()=>$('explore').scrollIntoView({behavior:'smooth'}));
+  $('backBtn').addEventListener('click',()=>{location.hash='';selectedQuestion=null;render();$('explore').scrollIntoView({behavior:'smooth'});});
+  $('sortSelect').addEventListener('change',e=>{sort=e.target.value;renderList();});
+  $('searchInput').addEventListener('input',e=>{search=e.target.value;renderList();});
+  $('categoryList').addEventListener('click',e=>{const btn=e.target.closest('[data-category]');if(btn)goToCategory(btn.dataset.category);});
+  $('popularTopics').addEventListener('click',e=>{const btn=e.target.closest('[data-category]');if(btn)goToCategory(btn.dataset.category);});
+  document.querySelector('.filter-tabs').addEventListener('click',e=>{const btn=e.target.closest('[data-filter]');if(btn){filter=btn.dataset.filter;renderList();}});
+  $('questionsList').addEventListener('click',e=>{if(e.target.closest('#emptyAskBtn')){openAsk();return;}const btn=e.target.closest('[data-open]');if(btn)location.hash=`question/${encodeURIComponent(btn.dataset.open)}`;});
+  $('questionDetail').addEventListener('click',async e=>{if(!e.target.closest('#shareBtn'))return;const link=location.href;try{await navigator.clipboard.writeText(link);toast('Question link copied.');}catch{toast(`Copy this link: ${link}`);}});
+  window.addEventListener('hashchange',handleHash);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('askModal').hidden)closeAsk();if(e.key==='/'&&$('askModal').hidden&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();if(selectedQuestion)location.hash='';$('searchInput').focus();}});
+  $('navExplore').addEventListener('click',()=>{selectedQuestion=null;render();});
+}
+
+document.addEventListener('DOMContentLoaded',init);
+
+</script>
+</body>
+</html>
